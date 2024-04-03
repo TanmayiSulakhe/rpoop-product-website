@@ -75,3 +75,18 @@
     background-color: whitesmoke;
     padding: 25px;
   }
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.center2{
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

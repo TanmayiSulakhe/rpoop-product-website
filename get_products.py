@@ -3,15 +3,10 @@ import requests
 import csv
 import pandas as pd
 import numpy as np
-from fake_useragent import UserAgent
-
-user_agent = UserAgent()
 
 
-random_user_agent = user_agent.random
-
-HEADERS = {'User-Agent': random_user_agent, 'Accepted-Language': 'en-US, en;q=0.5'}
-
+HEADERS = ({'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0',
+            'Accepted-Language' : 'en-US, en;q=0.5'})
 
 def amazon_products(query,all_products):
     URL= "https://www.amazon.in/s?k=" 
